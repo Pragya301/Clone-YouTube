@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Clone-YouTube/static/css/main.6b601dc2.css",
-    "main.js": "/Clone-YouTube/static/js/main.59db9a81.js",
+    "main.js": "/Clone-YouTube/static/js/main.82767d33.js",
     "reactPlayerYouTube.js": "/Clone-YouTube/static/js/reactPlayerYouTube.83be4d79.chunk.js",
     "reactPlayerSoundCloud.js": "/Clone-YouTube/static/js/reactPlayerSoundCloud.f4b15597.chunk.js",
     "reactPlayerVimeo.js": "/Clone-YouTube/static/js/reactPlayerVimeo.cfa3cba0.chunk.js",
@@ -17,7 +17,7 @@
     "reactPlayerPreview.js": "/Clone-YouTube/static/js/reactPlayerPreview.a6b98cf9.chunk.js",
     "index.html": "/Clone-YouTube/index.html",
     "main.6b601dc2.css.map": "/Clone-YouTube/static/css/main.6b601dc2.css.map",
-    "main.59db9a81.js.map": "/Clone-YouTube/static/js/main.59db9a81.js.map",
+    "main.82767d33.js.map": "/Clone-YouTube/static/js/main.82767d33.js.map",
     "reactPlayerYouTube.83be4d79.chunk.js.map": "/Clone-YouTube/static/js/reactPlayerYouTube.83be4d79.chunk.js.map",
     "reactPlayerSoundCloud.f4b15597.chunk.js.map": "/Clone-YouTube/static/js/reactPlayerSoundCloud.f4b15597.chunk.js.map",
     "reactPlayerVimeo.cfa3cba0.chunk.js.map": "/Clone-YouTube/static/js/reactPlayerVimeo.cfa3cba0.chunk.js.map",
@@ -34,6 +34,6 @@
   },
   "entrypoints": [
     "static/css/main.6b601dc2.css",
-    "static/js/main.59db9a81.js"
+    "static/js/main.82767d33.js"
   ]
 }
