@@ -21,7 +21,7 @@ const Feed = () => {
         <Sidebar selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
         
         <Typography className="copyright" variant="body2" sx={{ mt: 1.5, color: "#000", }}>
-          Copyright © 2022 Clone Youtube
+          Copyright © 2024 Clone Youtube
         </Typography>
       </Box>
 
