@@ -1,9 +1,24 @@
 import React from "react";
-import { Stack } from "@mui/material";
+import { Avatar, Stack } from "@mui/material";
 
 import { categories } from "../utils/constants";
+import { useDispatch, useSelector } from "react-redux";
+import { signOut } from "firebase/auth";
+import { logoutUser } from "../features/userSlice";
+import { auth } from "../firebase";
 
-const Categories = ({ selectedCategory, setSelectedCategory }) => (
+const Categories = ({ selectedCategory, setSelectedCategory }) => {
+
+  const user = useSelector(state => state.data.user.user);
+
+  const dispatch = useDispatch();
+  
+  const handelLogout = () => {
+    dispatch(logoutUser());
+    signOut(auth);
+  };
+
+  return (
   <Stack
     direction="row"
     sx={{
@@ -30,7 +45,30 @@ const Categories = ({ selectedCategory, setSelectedCategory }) => (
         </span>
       </button>
     ))}
+    <hr style={{width: '13vw'}}/>
+      <button style={{display: 'flex', 
+                      flexDirection: 'row',
+                      justifyContent: 'flex-start',
+                      border: '0',
+                      backgroundColor: '#fff'
+                      }}>
+        <Avatar> {user.username ? user.username.charAt(0).toUpperCase() : "A"}</Avatar>
+        <span>
+        <button onClick={handelLogout} className="logout_button"
+        style={{
+          fontSize: '15px', 
+          borderRadius: '10px',
+          fontWeight: 'bold',
+          color: 'red',
+          backgroundColor: 'lightgrey',
+          padding: '10px',
+          border: '0',
+          marginLeft: '10px'
+        }}
+        >Log out</button>
+        </span>
+      </button>
   </Stack>
 );
-
+      }
 export default Categories;
